@@ -28,7 +28,6 @@ namespace prog
   }
 
   const Color& Image::at(int x, int y) const{
-    Color DUMMY_color = this->Image_.at(x).at(y);
-    return DUMMY_color;
+    return this->Image_.at(x).at(y);
   }
 }
