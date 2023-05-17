@@ -3,14 +3,14 @@
 namespace prog
 {
   Image::Image(int w, int h, const Color &fill){
-      this->w_ = w;
-      this->h_ = h;
-      for(int i = 0; i < w; i++){
-          for(int o= 0; o < h; o++){
-              this->Image_.at(i).at(o) = fill;
-          }
-      }
+    this->w_ = w;
+    this->h_ = h;
+    Image_.resize(w_);
+    for(int i = 0; i < w_; i++){
+      Image_[i].resize(h_,fill);
+    }
   }
+  
 
   Image::~Image(){
 

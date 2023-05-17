@@ -1,7 +1,7 @@
 #ifndef __prog_Image_hpp__
 #define __prog_Image_hpp__
 
-#include <unordered_map>
+#include <vector>
 #include "Color.hpp"
 
 namespace prog
@@ -9,7 +9,7 @@ namespace prog
   class Image
   {
   private:
-      std::unordered_map<int, std::unordered_map<int, Color&>> Image_;
+      std::vector<std::vector<Color&>> Image_;
       int w_;
       int h_;
   public:
