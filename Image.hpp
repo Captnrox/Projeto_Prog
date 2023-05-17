@@ -1,5 +1,7 @@
 #ifndef __prog_Image_hpp__
 #define __prog_Image_hpp__
+
+#include <unordered_map>
 #include "Color.hpp"
 
 namespace prog
@@ -7,7 +9,9 @@ namespace prog
   class Image
   {
   private:
-    // TODO: define private fields for image state
+      std::unordered_map<int, std::unordered_map<int, Color&>> Image_;
+      int w_;
+      int h_;
   public:
     Image(int w, int h, const Color &fill = {255, 255, 255});
     ~Image();
