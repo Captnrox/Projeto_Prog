@@ -1,5 +1,7 @@
-#ifndef __prog_Image_hpp__
-#define __prog_Image_hpp__
+#ifndef prog_Image_hpp
+#define prog_Image_hpp
+
+#include <vector>
 #include "Color.hpp"
 
 namespace prog
@@ -7,9 +9,11 @@ namespace prog
   class Image
   {
   private:
-    // TODO: define private fields for image state
+      std::vector<std::vector<Color>> Image_;
+      int w_;
+      int h_;
   public:
-    Image(int w, int h, const Color &fill = {255, 255, 255});
+    Image(int w, int h, const Color& fill = {255, 255, 255});
     ~Image();
     int width() const;
     int height() const;

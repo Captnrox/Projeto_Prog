@@ -1,0 +1,20 @@
+>>>> [1] basic_blank1 <<<<
+Executing command 'blank' ...
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+>>>> [2] basic_blank2 <<<<
+Executing command 'blank' ...
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+>>>> [3] basic_blank3 <<<<
+Executing command 'blank' ...
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+>>>> [4] basic_open1 <<<<
+Executing command 'open' ...
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+>>>> [5] basic_open2 <<<<
+Executing command 'open' ...
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
